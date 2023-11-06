@@ -1,0 +1,196 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    position: relative;
+}
+
+body {
+    background-color: #222222;
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 44px;
+    position: relative;
+}
+
+.custom-button {
+    padding: 15px 30px;
+    border-radius: 15px;
+    background-color: white;
+    color: #000000;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.custom-button:hover {
+    transform: scale(1.1); 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222222;
+    height: 60px;
+    padding: 0 150px ;
+    padding-top: 40px;
+    font-size: 22px;
+}
+
+nav, nav * {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
+
+
+.nav-left, .nav-center, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    color: white;
+    margin: 0 20px;
+}
+
+.logo  {
+    flex-grow: 0;
+}
+
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; 
+}
+
+.content-inner {
+    max-width: 630px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.svg-container {
+    display: inline-block;
+    margin: 30px; 
+}
+
+.decorative-svg {
+    position: absolute;
+    top: 23%; 
+    transform: translateY(-50%); 
+    left: 52%;
+}
+
+.svg-container1 {
+    position: relative; 
+    overflow: hidden;   
+    width: 100%;        
+    height: 100vh;      
+    z-index: -1;         
+}
+
+#background-svg {
+    position: absolute;  
+    width: 60%;          
+    height: auto;        
+    opacity: 0.2;         
+    transform: rotate(-35deg);
+    margin-top: 200px;
+    left: -240px;          
+}
+
+
+#background-svg path {
+    fill: white;
+}
+
+#background-svg polygon {
+    fill: white;
+}
+
+#background-svg rect {
+    fill: white;
+}
+
+#deco-image {
+    position: absolute;
+    top: 600px;         
+    left: 1500px;        
+    z-index: 1;         
+    transform: rotate(15deg);
+}
+a {
+    text-decoration: none;
+}
+
+.containeradd {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    height: calc(10vh - 30px);
+    margin-top: 30px;
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    display: flex; 
+    flex-direction: column; 
+}
+
+.container > * {
+    flex: 1; 
+    margin: 10px 0; 
+}
+
+th {
+    cursor: pointer;
+}
+
+
+.delete-btn {
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+
+.modal {
+    display: none;
+  }
+  .modal-back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba( 0, 0, 0, .25 )
+  }
+  .modal-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 25px;
+    background: white;
+    transform: translate(-50%, -50%)
+  }
+
+  a, a:visited, a:hover, a:active {
+    color: white; /* Définit la couleur du texte des liens en blanc */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    background-color: transparent; /* Assure que le fond reste transparent */
+  }
+  
